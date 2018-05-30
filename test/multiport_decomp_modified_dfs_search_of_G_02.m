@@ -1,5 +1,6 @@
-function [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_B,dfs_nodes_of_A]= multiport_decomp_modified_dfs_search_of_G(cktnetlist)
-% Syntax :  [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_B,dfs_nodes_of_A]= multiport_decomp_modified_dfs_search_of_G(cktnetlist)
+function [nodeVisited, edgeId_of_tree_of_G, dfs_nodes_of_B, dfs_nodes_of_A] = multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);
+% Syntax :  [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_A,dfs_nodes_of_B]= multiport_decomp_modified_dfs_search_of_G_02(cktnetlist)
+
 % -- ERROR -- it is returning wrong dfs_node_of_B -- but can be taken 
 % ------------------------------ written on: Oct 08, 2017 ------------------------
     global g1_of_A;
