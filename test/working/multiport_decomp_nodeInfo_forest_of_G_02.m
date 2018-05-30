@@ -1,9 +1,9 @@
-function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G(cktnetlist);
-% Syntax : [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G(cktnetlist);
+function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G_02(cktnetlist);
+% Syntax : [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G_02(cktnetlist);
 
 % --------------------- written on : May 29, 2017 --------------------------------
  
-[nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_A,dfs_nodes_of_B]= multiport_decomp_modified_dfs_search_of_G_01(cktnetlist);
+[nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_A,dfs_nodes_of_B]= multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);
 [edges, g1] = multiport_decomp_nodeInfo_with_edge_identity(cktnetlist);
 
     global  edges_of_forest;

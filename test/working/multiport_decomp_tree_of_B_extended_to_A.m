@@ -16,7 +16,7 @@ function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_B
 
     [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_B,dfs_nodes_of_A] = multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);
     graph_of_super_node =  multiport_decomp_graph_info_of_super_node(cktnetlist);
-    [edges, g1_of_supernode] = multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G(cktnetlist);
+    [edges, g1_of_supernode] = multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G_02(cktnetlist);
     super_node_visited = zeros(length(g1_of_supernode),1);
     %fprintf('-------------------------------------------------------\n');
     %fprintf('------------ starting search in supernode -------------\n');

@@ -1,6 +1,6 @@
-function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_B_extended_to_A(cktnetlist)
+function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)
 % --------------------------------------------------------------------------------
-% Syntax : [edgeId_of_tree_for_hybrid_analysis, super_node_edgeIds] = multiport_decomp_tree_of_B_extended_to_A(cktnetlist)
+% Syntax : [edgeId_of_tree_for_hybrid_analysis, super_node_edgeIds] = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)
 % --------------------------------------------------------------------------------
 
 % ------------------------------ written on : May 29, 2018 -----------------------
@@ -14,9 +14,9 @@ function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_B
     global super_node_edgeIds;
     super_node_edgeIds = [];
 
-    [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_B,dfs_nodes_of_A] = multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);
+    [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_A,dfs_nodes_of_B] = multiport_decomp_modified_dfs_search_of_G_01(cktnetlist);
     graph_of_super_node =  multiport_decomp_graph_info_of_super_node(cktnetlist);
-    [edges, g1_of_supernode] = multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G_02(cktnetlist);
+    [edges, g1_of_supernode] = multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G(cktnetlist);
     super_node_visited = zeros(length(g1_of_supernode),1);
     %fprintf('-------------------------------------------------------\n');
     %fprintf('------------ starting search in supernode -------------\n');

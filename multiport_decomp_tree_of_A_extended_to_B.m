@@ -1,4 +1,4 @@
-function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)
+function [edgeId_of_tree_of_A_to_B, super_node_edgeIds]  = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)
 % --------------------------------------------------------------------------------
 % Syntax : [edgeId_of_tree_for_hybrid_analysis, super_node_edgeIds] = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)
 % --------------------------------------------------------------------------------
@@ -10,11 +10,11 @@ function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_A
     global super_node_visited;
     global graph_of_super_node;
 %    global nodeVisited;
-    global edgeId_of_tree_of_G;
+    global edgeId_of_tree_of_A_to_B;
     global super_node_edgeIds;
     super_node_edgeIds = [];
 
-    [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_A,dfs_nodes_of_B] = multiport_decomp_modified_dfs_search_of_G_01(cktnetlist);
+    [nodeVisited,edgeId_of_tree_of_A_to_B,dfs_nodes_of_A,dfs_nodes_of_B] = multiport_decomp_modified_dfs_search_of_G_01(cktnetlist);
     graph_of_super_node =  multiport_decomp_graph_info_of_super_node(cktnetlist);
     [edges, g1_of_supernode] = multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G(cktnetlist);
     super_node_visited = zeros(length(g1_of_supernode),1);
@@ -29,7 +29,7 @@ function multiport_decomp_dfs_search(superNodeId)
     global super_node_visited;
     global super_node_edgeIds;
     global graph_of_super_node;
-    global edgeId_of_tree_of_G;
+    global edgeId_of_tree_of_A_to_B;
     super_node_visited(superNodeId) = 1;
     adjEdgeIdsOfCurrentNode = g1_of_supernode{superNodeId};
     for edgeId=adjEdgeIdsOfCurrentNode
@@ -42,7 +42,7 @@ function multiport_decomp_dfs_search(superNodeId)
             continue
         end
         super_node_edgeIds = [super_node_edgeIds, edgeId];
-        edgeId_of_tree_of_G = [edgeId_of_tree_of_G,edgeId];
+        edgeId_of_tree_of_A_to_B = [edgeId_of_tree_of_A_to_B,edgeId];
         multiport_decomp_dfs_search (otherSuperNode);
     end
 end
