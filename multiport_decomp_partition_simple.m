@@ -12,7 +12,7 @@ function partition_simple = multiport_decomp_partition_simple(cktnetlist)
    partition_simple = zeros(1,number_of_element);
    for i = 1 : number_of_element 
 
-        if (strcmp(cktnetlist.elements{i}.name(1), 'V')) %compare it if it is V-source
+        if (strcmp(cktnetlist.elements{i}.name(1), 'I')) %compare it if it is V-source
             partition_simple(i) = 1;
         end
 

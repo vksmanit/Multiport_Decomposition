@@ -1,0 +1,130 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+muliport_decomp_ckt_01	multiport_decomp_ckt_01.m	/^function cktnetlist = muliport_decomp_ckt_01()$/;"	f
+muliport_decomp_ckt_01	test/multiport_decomp_ckt_01.m	/^function cktnetlist = muliport_decomp_ckt_01()$/;"	f
+muliport_decomp_ckt_01	test/working/multiport_decomp_ckt_01.m	/^function cktnetlist = muliport_decomp_ckt_01()$/;"	f
+muliport_decomp_ckt_02	multiport_decomp_ckt_02.m	/^function cktnetlist = muliport_decomp_ckt_02()$/;"	f
+multiport_decomp_G_and_J_of_network_01	multiport_decomp_G_and_J_of_network_01.m	/^function [G_n1, J_n1]=  multiport_decomp_G_and_J_of_network_01(cktnetlist)$/;"	f
+multiport_decomp_G_and_J_of_network_02	multiport_decomp_G_and_J_of_network_02.m	/^function [G_n2,J_n2]=  multiport_decomp_G_and_J_of_network_02(cktnetlist)$/;"	f
+multiport_decomp_G_and_b_of_network_01	multiport_decomp_G_and_b_of_network_01.m	/^function [i_p1, G_p1] =  multiport_decomp_G_and_b_of_network_01(cktnetlist)$/;"	f
+multiport_decomp_G_and_b_of_network_02	multiport_decomp_G_and_b_of_network_02.m	/^function [i_p2, G_p2] =  multiport_decomp_G_and_b_of_network_02(cktnetlist)$/;"	f
+multiport_decomp_common_nodes	multiport_decomp_common_nodes.m	/^function common_nodes =  multiport_decomp_common_nodes(cktnetlist)$/;"	f
+multiport_decomp_common_nodes	test/multiport_decomp_common_nodes.m	/^function common_nodes =  multiport_decomp_common_nodes(cktnetlist)$/;"	f
+multiport_decomp_common_nodes	test/working/multiport_decomp_common_nodes.m	/^function common_nodes =  multiport_decomp_common_nodes(cktnetlist)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_dfs_search_of_G.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_dfs_search_of_G_dot_A.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_dfs_search_of_G_dot_B.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_modified_dfs_search_of_G_01.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_modified_dfs_search_of_G_02.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_super_node_of_forest_of_G.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_super_node_of_forest_of_G_02.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_tree_of_A_extended_to_B.m	/^function multiport_decomp_dfs_search(superNodeId)$/;"	f
+multiport_decomp_dfs_search	multiport_decomp_tree_of_B_extended_to_A.m	/^function multiport_decomp_dfs_search(superNodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_dfs_search_of_G_dot_A.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_dfs_search_of_G_dot_B.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_modified_dfs_search_of_G_01.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_modified_dfs_search_of_G_02.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_super_node_of_forest_of_G.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_super_node_of_forest_of_G_02.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_tree_of_A_extended_to_B.m	/^function multiport_decomp_dfs_search(superNodeId)$/;"	f
+multiport_decomp_dfs_search	test/multiport_decomp_tree_of_B_extended_to_A.m	/^function multiport_decomp_dfs_search(superNodeId)$/;"	f
+multiport_decomp_dfs_search	test/working/multiport_decomp_dfs_search_of_G_dot_A.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/working/multiport_decomp_dfs_search_of_G_dot_B.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/working/multiport_decomp_modified_dfs_search_of_G_02.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/working/multiport_decomp_super_node_of_forest_of_G.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/working/multiport_decomp_super_node_of_forest_of_G_02.m	/^function multiport_decomp_dfs_search(nodeId)$/;"	f
+multiport_decomp_dfs_search	test/working/multiport_decomp_tree_of_B_extended_to_A.m	/^function multiport_decomp_dfs_search(superNodeId)$/;"	f
+multiport_decomp_dfs_search_of_G	multiport_decomp_dfs_search_of_G.m	/^function [nodeVisited,edgeId_of_tree_of_G,dfs_nodes_of_A,dfs_nodes_of_B]=  multiport_decomp_dfs_search_of_G(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_G_dot_A	multiport_decomp_dfs_search_of_G_dot_A.m	/^function [nodeVisited,edgeId_of_tree_of_A,dfs_nodes_of_A] = multiport_decomp_dfs_search_of_G_dot_A(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_G_dot_A	test/multiport_decomp_dfs_search_of_G_dot_A.m	/^function [nodeVisited,edgeId_of_tree_of_A,dfs_nodes_of_A] = multiport_decomp_dfs_search_of_G_dot_A(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_G_dot_A	test/working/multiport_decomp_dfs_search_of_G_dot_A.m	/^function [nodeVisited,edgeId_of_tree_of_A,dfs_nodes_of_A] = multiport_decomp_dfs_search_of_G_dot_A(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_G_dot_B	multiport_decomp_dfs_search_of_G_dot_B.m	/^function[nodeVisited, edgeId_of_tree_of_B,dfs_nodes_of_B] =  multiport_decomp_dfs_search_of_G_dot_B(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_G_dot_B	test/multiport_decomp_dfs_search_of_G_dot_B.m	/^function[nodeVisited, edgeId_of_tree_of_B,dfs_nodes_of_B] =  multiport_decomp_dfs_search_of_G_dot_B(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_G_dot_B	test/working/multiport_decomp_dfs_search_of_G_dot_B.m	/^function[nodeVisited, edgeId_of_tree_of_B,dfs_nodes_of_B] =  multiport_decomp_dfs_search_of_G_dot_B(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_network_01_g1	multiport_decomp_dfs_search_of_network_01_g1.m	/^function [edgeId_of_tree_of_network_01_g1] = multiport_decomp_dfs_search_of_network_01_g1(cktnetlist)$/;"	f
+multiport_decomp_dfs_search_of_network_02_g2	multiport_decomp_dfs_search_of_network_02_g1.m	/^function [edgeId_of_tree_of_network_02_g2] = multiport_decomp_dfs_search_of_network_02_g2(cktnetlist)$/;"	f
+multiport_decomp_graph_info_of_super_node	multiport_decomp_graph_info_of_super_node.m	/^function graph_of_super_node=  multiport_decomp_graph_info_of_super_node(cktnetlist)$/;"	f
+multiport_decomp_graph_info_of_super_node	test/multiport_decomp_graph_info_of_super_node.m	/^function graph_of_super_node=  multiport_decomp_graph_info_of_super_node(cktnetlist)$/;"	f
+multiport_decomp_graph_info_of_super_node	test/working/multiport_decomp_graph_info_of_super_node.m	/^function graph_of_super_node=  multiport_decomp_graph_info_of_super_node(cktnetlist)$/;"	f
+multiport_decomp_incidence_matrix_for_network_01	multiport_decomp_incidence_matrix_for_network_01.m	/^function [A1g_n1, A2g_n1, A2e_n1] = multiport_decomp_incidence_matrix_for_network_01(cktnetlist)$/;"	f
+multiport_decomp_incidence_matrix_for_network_01_g1	multiport_decomp_incidence_matrix_for_network_01_g1.m	/^function incidence_matrix_of_network_01_g1 =  multiport_decomp_incidence_matrix_for_network_01_g1(cktnetlist)$/;"	f
+multiport_decomp_incidence_matrix_for_network_01_g2	multiport_decomp_incidence_matrix_for_network_01_g2.m	/^function incidence_matrix_of_network_01_g2 = multiport_decomp_incidence_matrix_for_network_01_g2(cktnetlist) $/;"	f
+multiport_decomp_incidence_matrix_for_network_02	multiport_decomp_incidence_matrix_for_network_02.m	/^function [A1g_n2, A2g_n2, A2e_n2] = multiport_decomp_incidence_matrix_for_network_02(cktnetlist)$/;"	f
+multiport_decomp_incidence_matrix_for_network_02_g1	multiport_decomp_incidence_matrix_for_network_02_g1.m	/^function incidence_matrix_of_network_02_g1 =  multiport_decomp_incidence_matrix_for_network_02_g1(cktnetlist)$/;"	f
+multiport_decomp_incidence_matrix_for_network_02_g2	multiport_decomp_incidence_matrix_for_network_02_g2.m	/^function incidence_matrix_of_network_02_g2 = multiport_decomp_incidence_matrix_for_network_02_g2(cktnetlist) $/;"	f
+multiport_decomp_incidence_matrix_for_port	multiport_decomp_incidence_matrix_for_port.m	/^function incidence_matrix_for_port = multiport_decomp_incidence_matrix_for_port(cktnetlist)$/;"	f
+multiport_decomp_modified_dfs_search_of_G_01	multiport_decomp_modified_dfs_search_of_G_01.m	/^function [nodeVisited, edgeId_of_tree_of_G, dfs_nodes_of_A, dfs_nodes_of_B] = multiport_decomp_modified_dfs_search_of_G_01(cktnetlist);$/;"	f
+multiport_decomp_modified_dfs_search_of_G_01	test/multiport_decomp_modified_dfs_search_of_G_01.m	/^function [nodeVisited, edgeId_of_tree_of_G, dfs_nodes_of_A, dfs_nodes_of_B] = multiport_decomp_modified_dfs_search_of_G_01(cktnetlist);$/;"	f
+multiport_decomp_modified_dfs_search_of_G_02	multiport_decomp_modified_dfs_search_of_G_02.m	/^function [nodeVisited, edgeId_of_tree_of_G, dfs_nodes_of_B, dfs_nodes_of_A] = multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);$/;"	f
+multiport_decomp_modified_dfs_search_of_G_02	test/multiport_decomp_modified_dfs_search_of_G_02.m	/^function [nodeVisited, edgeId_of_tree_of_G, dfs_nodes_of_B, dfs_nodes_of_A] = multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);$/;"	f
+multiport_decomp_modified_dfs_search_of_G_02	test/working/multiport_decomp_modified_dfs_search_of_G_02.m	/^function [nodeVisited, edgeId_of_tree_of_G, dfs_nodes_of_B, dfs_nodes_of_A] = multiport_decomp_modified_dfs_search_of_G_02(cktnetlist);$/;"	f
+multiport_decomp_network_01	multiport_decomp_network_01.m	/^function modified_edges_for_network_01 =  multiport_decomp_network_01(cktnetlist)$/;"	f
+multiport_decomp_network_01_edges_for_G1	multiport_decomp_network_01_edges_for_G1.m	/^function modified_edges_for_network_01_g1 = multiport_decomp_network_01_edges_for_G1(cktnetlist)$/;"	f
+multiport_decomp_network_01_edges_for_G2	multiport_decomp_network_01_edges_for_G2.m	/^function modified_edges_for_network_01_g2 = multiport_decomp_network_01_edges_for_G2(cktnetlist)$/;"	f
+multiport_decomp_network_01_mna	multiport_decomp_network_01_mna.m	/^function cktnetlist_network_01 = multiport_decomp_network_01_mna(cktnetlist)$/;"	f
+multiport_decomp_network_01_simple	multiport_decomp_network_01_simple.m	/^function multiport_decomp_network_01_simple(cktnetlist)$/;"	f
+multiport_decomp_network_02	multiport_decomp_network_02.m	/^function modified_edges_for_network_02 =  multiport_decomp_network_02(cktnetlist)$/;"	f
+multiport_decomp_network_02_edges_for_G1	multiport_decomp_network_02_edges_for_G1.m	/^function modified_edges_for_network_02_g1 = multiport_decomp_network_02_edges_for_G1(cktnetlist)$/;"	f
+multiport_decomp_network_02_edges_for_G2	multiport_decomp_network_02_edges_for_G2.m	/^function modified_edges_for_network_02_g2 = multiport_decomp_network_02_edges_for_G2(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_forest_of_G	multiport_decomp_nodeInfo_forest_of_G.m	/^function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G(cktnetlist);$/;"	f
+multiport_decomp_nodeInfo_forest_of_G	test/multiport_decomp_nodeInfo_forest_of_G.m	/^function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G(cktnetlist);$/;"	f
+multiport_decomp_nodeInfo_forest_of_G	test/working/multiport_decomp_nodeInfo_forest_of_G.m	/^function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G(cktnetlist);$/;"	f
+multiport_decomp_nodeInfo_forest_of_G_02	multiport_decomp_nodeInfo_forest_of_G_02.m	/^function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G_02(cktnetlist);$/;"	f
+multiport_decomp_nodeInfo_forest_of_G_02	test/multiport_decomp_nodeInfo_forest_of_G_02.m	/^function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G_02(cktnetlist);$/;"	f
+multiport_decomp_nodeInfo_forest_of_G_02	test/working/multiport_decomp_nodeInfo_forest_of_G_02.m	/^function [edges,g1_of_forest,g1] = multiport_decomp_nodeInfo_forest_of_G_02(cktnetlist);$/;"	f
+multiport_decomp_nodeInfo_network_01_g1	multiport_decomp_nodeInfo_network_01_g1.m	/^function g1 = multiport_decomp_nodeInfo_network_01_g1(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_network_02_g1	multiport_decomp_nodeInfo_network_02_g1.m	/^function g2 = multiport_decomp_nodeInfo_network_02_g1(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G	multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G_02.m	/^function [edges,g1_of_supernode] =  multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G	test/multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G_02.m	/^function [edges,g1_of_supernode] =  multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G	test/working/multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G_02.m	/^function [edges,g1_of_supernode] =  multiport_decomp_nodeInfo_of_edge_identity_of_supernode_of_G(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity	multiport_decomp_nodeInfo_with_edge_identity.m	/^function [edges, g1] = multiport_decomp_nodeInfo_with_edge_identity(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity	test/multiport_decomp_nodeInfo_with_edge_identity.m	/^function [edges, g1] = multiport_decomp_nodeInfo_with_edge_identity(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity	test/working/multiport_decomp_nodeInfo_with_edge_identity.m	/^function [edges, g1] = multiport_decomp_nodeInfo_with_edge_identity(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_A	multiport_decomp_nodeInfo_with_edge_identity_of_A.m	/^function [edges, g1_of_A] = multiport_decomp_nodeInfo_with_edge_identity_of_A(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_A	test/multiport_decomp_nodeInfo_with_edge_identity_of_A.m	/^function [edges, g1_of_A] = multiport_decomp_nodeInfo_with_edge_identity_of_A(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_A	test/working/multiport_decomp_nodeInfo_with_edge_identity_of_A.m	/^function [edges, g1_of_A] = multiport_decomp_nodeInfo_with_edge_identity_of_A(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_B	multiport_decomp_nodeInfo_with_edge_identity_of_B.m	/^function [edges, g1_of_B] = multiport_decomp_nodeInfo_with_edge_identity_of_B(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_B	test/multiport_decomp_nodeInfo_with_edge_identity_of_B.m	/^function [edges, g1_of_B] = multiport_decomp_nodeInfo_with_edge_identity_of_B(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_B	test/working/multiport_decomp_nodeInfo_with_edge_identity_of_B.m	/^function [edges, g1_of_B] = multiport_decomp_nodeInfo_with_edge_identity_of_B(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G	multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G.m	/^function [edges,g1_of_supernode] =  multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G	test/multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G.m	/^function [edges,g1_of_supernode] =  multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G	test/working/multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G.m	/^function [edges,g1_of_supernode] =  multiport_decomp_nodeInfo_with_edge_identity_of_super_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_partition_simple	multiport_decomp_partition_simple.m	/^function partition_simple = multiport_decomp_partition_simple(cktnetlist)$/;"	f
+multiport_decomp_partition_simple	test/multiport_decomp_partition_simple.m	/^function partition_simple = multiport_decomp_partition_simple(cktnetlist)$/;"	f
+multiport_decomp_partition_simple	test/working/multiport_decomp_partition_simple.m	/^function partition_simple = multiport_decomp_partition_simple(cktnetlist)$/;"	f
+multiport_decomp_port	multiport_decomp_port.m	/^function port_edges = multiport_decomp_port(cktnetlist)$/;"	f
+multiport_decomp_port_char_simple	multiport_decomp_port_char_simple.m	/^function multiport_decomp_port_char_simple(cktnetlist)$/;"	f
+multiport_decomp_ports	multiport_decomp_ports.m	/^function multiport_decomp_ports(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G	multiport_decomp_dfs_search_of_G.m	/^function  multiport_decomp_start_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G	multiport_decomp_dfs_search_of_G_dot_B.m	/^function  multiport_decomp_start_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G	test/multiport_decomp_dfs_search_of_G_dot_B.m	/^function  multiport_decomp_start_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G	test/working/multiport_decomp_dfs_search_of_G_dot_B.m	/^function  multiport_decomp_start_node_of_G(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G_dot_A	multiport_decomp_dfs_search_of_G_dot_A.m	/^function  multiport_decomp_start_node_of_G_dot_A(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G_dot_A	test/multiport_decomp_dfs_search_of_G_dot_A.m	/^function  multiport_decomp_start_node_of_G_dot_A(cktnetlist)$/;"	f
+multiport_decomp_start_node_of_G_dot_A	test/working/multiport_decomp_dfs_search_of_G_dot_A.m	/^function  multiport_decomp_start_node_of_G_dot_A(cktnetlist)$/;"	f
+multiport_decomp_super_node_of_forest_of_G	multiport_decomp_super_node_of_forest_of_G.m	/^function super_node =  multiport_decomp_super_node_of_forest_of_G(cktnetlist)$/;"	f
+multiport_decomp_super_node_of_forest_of_G	test/multiport_decomp_super_node_of_forest_of_G.m	/^function super_node =  multiport_decomp_super_node_of_forest_of_G(cktnetlist)$/;"	f
+multiport_decomp_super_node_of_forest_of_G	test/working/multiport_decomp_super_node_of_forest_of_G.m	/^function super_node =  multiport_decomp_super_node_of_forest_of_G(cktnetlist)$/;"	f
+multiport_decomp_super_node_of_forest_of_G_02	multiport_decomp_super_node_of_forest_of_G_02.m	/^function super_node =  multiport_decomp_super_node_of_forest_of_G_02(cktnetlist)$/;"	f
+multiport_decomp_super_node_of_forest_of_G_02	test/multiport_decomp_super_node_of_forest_of_G_02.m	/^function super_node =  multiport_decomp_super_node_of_forest_of_G_02(cktnetlist)$/;"	f
+multiport_decomp_super_node_of_forest_of_G_02	test/working/multiport_decomp_super_node_of_forest_of_G_02.m	/^function super_node =  multiport_decomp_super_node_of_forest_of_G_02(cktnetlist)$/;"	f
+multiport_decomp_test	multiport_decomp_test.m	/^function  [i_p1, G_p1] =  multiport_decomp_test(cktnetlist)$/;"	f
+multiport_decomp_tree_of_A_extended_to_B	multiport_decomp_tree_of_A_extended_to_B.m	/^function [edgeId_of_tree_of_A_to_B, super_node_edgeIds_01]  = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)$/;"	f
+multiport_decomp_tree_of_A_extended_to_B	test/multiport_decomp_tree_of_A_extended_to_B.m	/^function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_A_extended_to_B(cktnetlist)$/;"	f
+multiport_decomp_tree_of_B_extended_to_A	multiport_decomp_tree_of_B_extended_to_A.m	/^function [edgeId_of_tree_of_B_to_A, super_node_edgeIds_02]  = multiport_decomp_tree_of_B_extended_to_A(cktnetlist)$/;"	f
+multiport_decomp_tree_of_B_extended_to_A	test/multiport_decomp_tree_of_B_extended_to_A.m	/^function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_B_extended_to_A(cktnetlist)$/;"	f
+multiport_decomp_tree_of_B_extended_to_A	test/working/multiport_decomp_tree_of_B_extended_to_A.m	/^function [edgeId_of_tree_of_G, super_node_edgeIds]  = multiport_decomp_tree_of_B_extended_to_A(cktnetlist)$/;"	f
+multiport_decomp_tree_partition_01	multiport_decomp_tree_partition_01.m	/^function [treeEdgeId_of_A_01, treeEdgeId_of_B_01, treeEdgeId_of_A_02, treeEdgeId_of_B_02] = multiport_decomp_tree_partition_01(cktnetlist)$/;"	f
+multiport_dfs_search_of_netowrk_01_g1	multiport_decomp_dfs_search_of_network_01_g1.m	/^function multiport_dfs_search_of_netowrk_01_g1(nodeId)$/;"	f
+multiport_dfs_search_of_netowrk_01_g2	multiport_decomp_dfs_search_of_network_02_g1.m	/^function multiport_dfs_search_of_netowrk_01_g2(nodeId)$/;"	f
+multiport_start_node_network_01_g1	multiport_decomp_dfs_search_of_network_01_g1.m	/^function multiport_start_node_network_01_g1(cktnetlist)$/;"	f
+multiport_start_node_network_02_g2	multiport_decomp_dfs_search_of_network_02_g1.m	/^function multiport_start_node_network_02_g2(cktnetlist)$/;"	f
+nal_nbk_dfs_search	nal_nbk_dfs_search_of_G_dot_A.m	/^function nal_nbk_dfs_search(nodeId)$/;"	f
+nal_nbk_dfs_search_of_G_dot_A	nal_nbk_dfs_search_of_G_dot_A.m	/^function [nodeVisited,edgeId_of_tree_of_A,dfs_nodes_of_A] = nal_nbk_dfs_search_of_G_dot_A(cktnetlist)$/;"	f
+nal_nbk_modified_edges_for_NAL_graph	nal_nbk_modified_edges_for_NAL_graph.m	/^function all_modified_edges_for_NAL =  nal_nbk_modified_edges_for_NAL_graph(cktnetlist)$/;"	f
+nal_nbk_start_node_of_G_dot_A	nal_nbk_dfs_search_of_G_dot_A.m	/^function  nal_nbk_start_node_of_G_dot_A(cktnetlist)$/;"	f
+working_chache	working_cache.m	/^function working_chache(cktnetlist)$/;"	f
