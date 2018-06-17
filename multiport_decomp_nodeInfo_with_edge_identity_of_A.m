@@ -12,6 +12,7 @@ function [edges, g1_of_A] = multiport_decomp_nodeInfo_with_edge_identity_of_A(ck
     edges = {};
     
     N = length(cktnetlist.nodenames)+ 1;  %% '+1' is for gnd node 
+    %%%%% partition_simple can be done in more general way or harcoded; %%%%
     partiion_simple = multiport_decomp_partition_simple(cktnetlist);
 
        

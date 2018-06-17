@@ -7,9 +7,11 @@ function modified_edges_for_network_02_g1 = multiport_decomp_network_02_edges_fo
      common_nodes = multiport_decomp_common_nodes(cktnetlist);
      common_nodes_index = find(common_nodes);
      partition_simple = multiport_decomp_partition_simple(cktnetlist);
-     nodes_to_be_mergers_for_g1 = modified_edges_for_network_02(end,:);
+     nodes_to_be_mergers_for_g1 = modified_edges_for_network_02(end:-1:end - length(common_nodes_index) + 2, :);
+     nodes_to_be_mergers_for_g1 = unique(nodes_to_be_mergers_for_g1);
+     %nodes_to_be_mergers_for_g1 = modified_edges_for_network_02(end,:);
      modified_edges_for_network_02_g1 = [];
-    N = length(cktnetlist.nodenames)+1;
+     N = length(cktnetlist.nodenames)+1;
      for i = 1:length(cktnetlist.elements)
          if (partition_simple(i) == 0) 
              edge = cktnetlist.elements{i}.nodes;

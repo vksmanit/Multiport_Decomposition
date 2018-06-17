@@ -7,8 +7,10 @@ function incidence_matrix_of_network_02_g1 =  multiport_decomp_incidence_matrix_
      cols = size(modified_edges_for_network_02_g1,1);
      incidence_matrix_of_network_02_g1 = zeros(rows,cols);
      for i = 1:cols
-         incidence_matrix_of_network_02_g1(modified_edges_for_network_02_g1(i,1),i) = +1 ;
-         incidence_matrix_of_network_02_g1(modified_edges_for_network_02_g1(i,2),i) = -1 ;
+         if (modified_edges_for_network_02_g1(i,1) ~= modified_edges_for_network_02_g1(i,2));
+            incidence_matrix_of_network_02_g1(modified_edges_for_network_02_g1(i,1),i) = +1 ;
+            incidence_matrix_of_network_02_g1(modified_edges_for_network_02_g1(i,2),i) = -1 ;
+         end
      end
      incidence_matrix_of_network_02_g1 = incidence_matrix_of_network_02_g1(unique(modified_edges_for_network_02_g1),:);
 end

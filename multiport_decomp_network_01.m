@@ -1,9 +1,15 @@
 function modified_edges_for_network_01 =  multiport_decomp_network_01(cktnetlist)
 % --------------------------------------------------------------------------------
 % Syntax : modified_edges_for_network_01 = multiport_decomp_network_01(cktnetlist)
+%
+% This function will return the network 01 modified edges along with a port voltage
+% edge sources;
 % --------------------------------------------------------------------------------
+
+% ------------------------- modified on : Jun 17, 2018 ---------------------------
     common_nodes = multiport_decomp_common_nodes(cktnetlist);
     common_nodes_index = find(common_nodes);
+    %%%%% partition_simple can be patition in more general or can be hardcoded %%%%%
     partition_simple = multiport_decomp_partition_simple(cktnetlist);
     N = length(cktnetlist.nodenames)+1;
     modified_edges_for_network_01 = [];
@@ -26,6 +32,9 @@ function modified_edges_for_network_01 =  multiport_decomp_network_01(cktnetlist
         end 
     end
     %%%%%%%%%%%%%%%%%%%%%% adding port as voltage source %%%%%%%%%%%%%%%%%%%%%%%%
-    modified_edges_for_network_01 = [modified_edges_for_network_01; common_nodes_index(1) common_nodes_index(2)];
+    %modified_edges_for_network_01 = [modified_edges_for_network_01; common_nodes_index(1) common_nodes_index(2)];
+    for i = 1:(length(common_nodes_index)-1)
+        modified_edges_for_network_01 = [modified_edges_for_network_01; common_nodes_index(i) common_nodes_index(i+1)];
+    end
 
 end
