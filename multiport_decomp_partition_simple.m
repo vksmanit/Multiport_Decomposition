@@ -10,7 +10,8 @@ function partition_simple = multiport_decomp_partition_simple(cktnetlist)
     
    number_of_element = length(cktnetlist.elements);
    %%%%% partition_simple can be patition in more general or can be hardcoded %%%%%
-    partition_simple =  [0 0 0 0 0 1 1 1 1 1 1 1]; % for ckt-01
+   % partition_simple =  [0 0 0 0 0 1 1 1 1 1 1 1]; % for ckt-01
+    partition_simple =  [0 0 0 0 0 1 1 1 1 1 1 1 1]; % for ckt-03
 
   %  partition_simple = zeros(1,number_of_element);
   % for i = 1 : number_of_element 
