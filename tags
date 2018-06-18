@@ -17,6 +17,7 @@ muliport_decomp_ckt_02	working_for_ckt_01/multiport_decomp_ckt_02.m	/^function c
 muliport_decomp_ckt_03	20180617_working/multiport_decomp_ckt_03.m	/^function cktnetlist = muliport_decomp_ckt_03()$/;"	f
 muliport_decomp_ckt_03	multiport_decomp_ckt_03.m	/^function cktnetlist = muliport_decomp_ckt_03()$/;"	f
 muliport_decomp_ckt_03	working_for_ckt_01/multiport_decomp_ckt_03.m	/^function cktnetlist = muliport_decomp_ckt_03()$/;"	f
+muliport_decomp_ckt_04	multiport_decomp_ckt_04.m	/^function cktnetlist = muliport_decomp_ckt_04()$/;"	f
 multiport_decomp_G_and_J_of_network_01	20180617_working/multiport_decomp_G_and_J_of_network_01.m	/^function [G_n1, J_n1]=  multiport_decomp_G_and_J_of_network_01(cktnetlist)$/;"	f
 multiport_decomp_G_and_J_of_network_01	multiport_decomp_G_and_J_of_network_01.m	/^function [G_n1, J_n1]=  multiport_decomp_G_and_J_of_network_01(cktnetlist)$/;"	f
 multiport_decomp_G_and_J_of_network_01	working_for_ckt_01/multiport_decomp_G_and_J_of_network_01.m	/^function [G_n1, J_n1]=  multiport_decomp_G_and_J_of_network_01(cktnetlist)$/;"	f

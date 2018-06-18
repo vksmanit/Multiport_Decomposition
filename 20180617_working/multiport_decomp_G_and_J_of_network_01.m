@@ -8,7 +8,7 @@ function [G_n1, J_n1]=  multiport_decomp_G_and_J_of_network_01(cktnetlist)
     G_n1 = zeros(size_of_G, size_of_G);
     J_n1 = zeros(size_of_G, 1);
     for i = 1: length(cktnetlist.elements)
-        if (partition_simple(i) == 1)
+        if (partition_simple(i) == 0)
             if (~isempty(cktnetlist.elements{i}.parms))
                 resistance = cell2mat(cktnetlist.elements{i}.parms);
                 G_n1(i,i) = 1/resistance;

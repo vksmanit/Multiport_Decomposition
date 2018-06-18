@@ -19,7 +19,7 @@ function [edges, g1_of_A] = multiport_decomp_nodeInfo_with_edge_identity_of_A(ck
     g1_of_A = cell(N,1);
     for i = 1:length(cktnetlist.elements)
         edges = [edges ; cktnetlist.elements{i}.nodes];
-        if (partiion_simple(i) == 1) %% this will allow the elements belonging to the only A-type 
+        if (partiion_simple(i) == 0) %% this will allow the elements belonging to the only A-type 
             edge = cktnetlist.elements{i}.nodes;
             node1 = edge(1,1);
             node2 = edge(1,2);

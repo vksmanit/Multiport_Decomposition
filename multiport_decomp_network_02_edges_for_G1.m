@@ -13,7 +13,7 @@ function modified_edges_for_network_02_g1 = multiport_decomp_network_02_edges_fo
      modified_edges_for_network_02_g1 = [];
      N = length(cktnetlist.nodenames)+1;
      for i = 1:length(cktnetlist.elements)
-         if (partition_simple(i) == 0) 
+         if (partition_simple(i) == 1) 
              edge = cktnetlist.elements{i}.nodes;
              node1 = edge(1,1);
              node2 = edge(1,2);

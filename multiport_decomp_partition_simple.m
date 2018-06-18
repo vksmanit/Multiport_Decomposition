@@ -10,17 +10,19 @@ function partition_simple = multiport_decomp_partition_simple(cktnetlist)
     
    number_of_element = length(cktnetlist.elements);
    %%%%% partition_simple can be patition in more general or can be hardcoded %%%%%
-   partition_simple = zeros(1,number_of_element);
-   for i = 1 : number_of_element 
+    partition_simple =  [0 0 0 0 0 1 1 1 1 1 1 1]; % for ckt-01
 
-        if (strcmp(cktnetlist.elements{i}.name(1), 'I')) %compare it if it is V-source
-            partition_simple(i) = 1;
-        end
-
-        if (strcmp(cktnetlist.elements{i}.name(1), 'R')) %compare it if it is V-source
-            if (cell2mat(cktnetlist.elements{i}.parms) == 1000)
-                partition_simple(i) = 1;
-            end 
-        end 
-   end 
+  %  partition_simple = zeros(1,number_of_element);
+  % for i = 1 : number_of_element 
+    
+  %      if (strcmp(cktnetlist.elements{i}.name(1), 'I')) %compare it if it is V-source
+  %          partition_simple(i) = 1;
+  %      end
+    
+  %      if (strcmp(cktnetlist.elements{i}.name(1), 'R')) %compare it if it is V-source
+  %          if (cell2mat(cktnetlist.elements{i}.parms) == 1000)
+  %              partition_simple(i) = 1;
+  %          end 
+  %     end 
+  %end 
 end 
