@@ -1,10 +1,13 @@
-function modified_edges_for_network_02 =  multiport_decomp_network_02(cktnetlist)
+function [modified_edges_for_network_02, number_of_port_branch_in_network_02] =  multiport_decomp_network_02(cktnetlist)
 % --------------------------------------------------------------------------------
-% Syntax : modified_edges_for_network_02 = multiport_decomp_network_02(cktnetlist)
+% Syntax : [modified_edges_for_network_02, number_of_port_branch_in_network_02] = multiport_decomp_network_02(cktnetlist)
 % --------------------------------------------------------------------------------
     common_nodes = multiport_decomp_common_nodes(cktnetlist);
     common_nodes_index = find(common_nodes);
     %%%%% partition_simple can be patition in more general or can be hardcoded %%%%%
+
+    [nodeVisited,edgeId_of_tree_of_B,dfs_nodes_of_B] = multiport_decomp_dfs_search_of_G_dot_B(cktnetlist);
+
     partition_simple = multiport_decomp_partition_simple(cktnetlist);
     N = length(cktnetlist.nodenames)+1;
     modified_edges_for_network_02 = [];
@@ -28,8 +31,16 @@ function modified_edges_for_network_02 =  multiport_decomp_network_02(cktnetlist
     end
     %%%%%%%%%%%%%%%%%%%%%% adding port as voltage source %%%%%%%%%%%%%%%%%%%%%%%%
     %modified_edges_for_network_02 = [modified_edges_for_network_02; common_nodes_index(1) common_nodes_index(2)];
-    for i = 1:(length(common_nodes_index)-1)
-        modified_edges_for_network_02 = [modified_edges_for_network_02; common_nodes_index(i) common_nodes_index(i+1)];
+   %for i = 1:(length(common_nodes_index)-1)
+   %    if (ismember(common_nodes_index(i),dfs_nodes_of_B) && ismember(common_nodes_index(i+1),dfs_nodes_of_B))
+   %        modified_edges_for_network_02 = [modified_edges_for_network_02; common_nodes_index(i) common_nodes_index(i+1)];
+   %    end
+   %end
+    number_of_port_branch_in_network_02 = 0;
+    shared_nodes_of_B = intersect(dfs_nodes_of_B, common_nodes_index);
+    for i = 1:(length(shared_nodes_of_B)-1)
+        number_of_port_branch_in_network_02 = number_of_port_branch_in_network_02 + 1;
+        modified_edges_for_network_02 = [modified_edges_for_network_02; shared_nodes_of_B(i) shared_nodes_of_B(i+1)];
     end
 
 end

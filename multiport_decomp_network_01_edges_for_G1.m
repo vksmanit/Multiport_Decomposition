@@ -2,12 +2,12 @@ function modified_edges_for_network_01_g1 = multiport_decomp_network_01_edges_fo
 % --------------------------------------------------------------------------------
 % Syntax :  modified_edges_for_network_01_g1 = multiport_decomp_network_01_edges_for_G1(cktnetlist) 
 % --------------------------------------------------------------------------------
-
-     modified_edges_for_network_01 = multiport_decomp_network_01(cktnetlist);
-     common_nodes = multiport_decomp_common_nodes(cktnetlist);
-     common_nodes_index = find(common_nodes);
+     [modified_edges_for_network_01, port] = multiport_decomp_network_01(cktnetlist);
+    %common_nodes = multiport_decomp_common_nodes(cktnetlist);
+    %common_nodes_index = find(common_nodes);
      partition_simple = multiport_decomp_partition_simple(cktnetlist);
-     nodes_to_be_mergers_for_g1 = modified_edges_for_network_01(end:-1:end - length(common_nodes_index) + 2, :);
+     nodes_to_be_mergers_for_g1 = modified_edges_for_network_01(end:-1:end-port+ 1,:);
+    % nodes_to_be_mergers_for_g1 = modified_edges_for_network_01(end:-1:end - length(common_nodes_index) + 2, :);
      nodes_to_be_mergers_for_g1 = unique(nodes_to_be_mergers_for_g1);
      %nodes_to_be_mergers_for_g1 = modified_edges_for_network_01(end,:);
      modified_edges_for_network_01_g1 = [];

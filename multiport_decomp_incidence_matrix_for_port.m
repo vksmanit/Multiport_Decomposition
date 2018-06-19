@@ -3,16 +3,16 @@ function incidence_matrix_for_port = multiport_decomp_incidence_matrix_for_port(
 % Syntax : incidence_matrix_for_port = multiport_decomp_incidence_matrix_for_port(cktnetlist)
 % --------------------------------------------------------------------------------  
     [A1g_n1, A2g_n1, A2e_n1] = multiport_decomp_incidence_matrix_for_network_01(cktnetlist);
-    [A1g_n2, A2g_n2, A2e_n2] = multiport_decomp_incidence_matrix_for_network_02(cktnetlist);
-    incidence_matrix_for_port = [A2e_n1, A2e_n2];
-   %port_edges = multiport_decomp_port(cktnetlist);
-   %common_nodes = multiport_decomp_common_nodes(cktnetlist);
-   %common_nodes_index = find(common_nodes);
-   %number_of_ports = size(port_edges,1);
-   %incidence_matrix_for_port = (zeros(length(common_nodes_index),number_of_ports));
-   %for i = 1: number_of_ports
-   %    incidence_matrix_for_port (port_edges(i,1),i) = 1;
-   %    incidence_matrix_for_port (port_edges(i,2),i) = -1;
-   %end
-   %incidence_matrix_for_port = incidence_matrix_for_port(common_nodes_index, :);
+    [A1g_n2, A2g_n2, A2e_n2] = multiport_decomp_incidence_matrix_for_network_02(cktnetlist);    
+    % incidence_matrix_for_port = [A2e_n1, A2e_n2];
+    %incidence_matrix_for_port = [A2e_n1, A2e_n2];
+    %%%%%%%%%% for ckt-04 %%%%%%%
+     [A1g_n3, A2g_n3, A2e_n3] = multiport_decomp_incidence_matrix_for_network_03(cktnetlist);    
+     sn1 = size(A2e_n1);
+     sn2 = size(A2e_n2);
+     sn3 = size(A2e_n3);
+     a = max(max(sn1(1),sn2(1)),sn3(1));
+     incidence_matrix_for_port = [[A2e_n1 ;zeros(abs([a 0]-sn1))],[A2e_n2;zeros(abs([a,0]-sn2))],[A2e_n3;zeros(abs([a,0]-sn3))]];
+
+      
 end
