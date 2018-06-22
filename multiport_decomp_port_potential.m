@@ -1,10 +1,13 @@
-function v_nP = multiport_decomp_port_potential(cktnetlist)
+function [v_nP, ArP]  = multiport_decomp_port_potential(cktnetlist)
 % --------------------------------------------------------------------------------
-% Syntax : v_nP = multiport_decomp_port_potential(cktnetlist)
+% Syntax : [v_nP, ArP] = multiport_decomp_port_potential(cktnetlist);
 %
 % This function will return port node potential vector v_nP. 
 % This node potential can be used to calculate potential difference 
 % across the port terminals.
+%
+% It is also modified to return reduced incidence matrix of port connection 
+% diagram. 
 % --------------------------------------------------------------------------------
     %ArP = multiport_decomp_incidence_matrix_for_port(cktnetlist);
     ArP = multiport_decomp_port(cktnetlist);
@@ -18,6 +21,8 @@ function v_nP = multiport_decomp_port_potential(cktnetlist)
     G = blkdiag(G_p1, G_p2, G_p3);
     b = [i_p1;i_p2;i_p3];
 
+    % this below matrix can be solved using conjugate gradient method 
+    % as this matrix is symmetirc 
     v_nP = (ArP * G * ArP')\(-ArP * b);
 
 

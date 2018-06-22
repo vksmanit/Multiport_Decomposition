@@ -1,10 +1,10 @@
-function b = solution_of_system_using_lu(A,b)   
+function b = solution_of_system_using_lu(L,U,b)   
 % --------------------------------------------------------------------------------
-% Syntax : 
+% Syntax : b = solution_of_system_using_lu(L,U,b) 
 % --------------------------------------------------------------------------------
     size_of_system = length(b);
     %[rows, cols] = size(A);
-    [L,U] = lu_decom(A);
+    %[L,U] = lu_decom(A);
 
     %%%%% Forward Substition %%%%%%
     for i = 1:size_of_system

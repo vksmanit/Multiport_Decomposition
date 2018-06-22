@@ -1,6 +1,6 @@
-function cktnetlist = muliport_decomp_ckt_03()
+function cktnetlist = multiport_decomp_ckt_03()
 % --------------------------------------------------------------------------------
-% Syntax : cktnetlist = muliport_decomp_ckt_03()
+% Syntax : cktnetlist = multiport_decomp_ckt_03()
 %
 % This function will return an example ckt which we will use to illustrate 
 % multiport decomposition method.
@@ -8,7 +8,7 @@ function cktnetlist = muliport_decomp_ckt_03()
 
 
     clear cktnetlist;
-    cktnetlist.cktname= 'muliport_decomp_ckt_03';
+    cktnetlist.cktname= 'multiport_decomp_ckt_03';
     cktnetlist.nodenames = {'1','2','3','4','5','6','7'};
     cktnetlist.groundnodename = 'gnd';
     rM = resModSpec();
