@@ -24,12 +24,12 @@ function multiport_start_node_network_04_g1(cktnetlist)
     for i = 1:length(g1) 
         if ( nodeVisited(i) == 0) 
             start_node = i;
-            multiport_dfs_search_of_netowrk_01_g1(start_node);
+            multiport_dfs_search_of_netowrk_04_g1(start_node);
         end 
     end
 end
 
-function multiport_dfs_search_of_netowrk_01_g1(nodeId)
+function multiport_dfs_search_of_netowrk_04_g1(nodeId)
     global g1;
     global nodeVisited;
     global edges;
@@ -58,6 +58,6 @@ function multiport_dfs_search_of_netowrk_01_g1(nodeId)
         end;
         dfs_ndoes_of_network_04_g1 = [dfs_ndoes_of_network_04_g1, otherNode];
         edgeId_of_tree_of_network_04_g1 = [edgeId_of_tree_of_network_04_g1, edgeId];
-        multiport_dfs_search_of_netowrk_01_g1(otherNode);
+        multiport_dfs_search_of_netowrk_04_g1(otherNode);
     end
 end

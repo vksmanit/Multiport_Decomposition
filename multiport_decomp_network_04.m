@@ -9,7 +9,7 @@ function [modified_edges_for_network_04, number_of_port_branch_in_network_04] = 
 % ------------------------- modified on : Jun 17, 2018 ---------------------------
     common_nodes = multiport_decomp_common_nodes(cktnetlist);
     common_nodes_index = find(common_nodes);
-    [nodeVisited,edgeId_of_tree_of_A,dfs_nodes_of_A] = multiport_decomp_dfs_search_of_G_dot_A(cktnetlist);
+    [nodeVisited,edgeId_of_tree_of_D,dfs_nodes_of_D] = multiport_decomp_dfs_search_of_G_dot_D(cktnetlist);
     %%%%% partition_simple can be patition in more general or can be hardcoded %%%%%
     partition_simple = multiport_decomp_partition_simple(cktnetlist);
     N = length(cktnetlist.nodenames)+1;
@@ -43,9 +43,9 @@ function [modified_edges_for_network_04, number_of_port_branch_in_network_04] = 
 %       end
 %   end
     number_of_port_branch_in_network_04 = 0;
-    shared_nodes_of_A = intersect(dfs_nodes_of_A, common_nodes_index);
-    for i = 1:(length(shared_nodes_of_A)-1)
+    shared_nodes_of_D = intersect(dfs_nodes_of_D, common_nodes_index);
+    for i = 1:(length(shared_nodes_of_D)-1)
         number_of_port_branch_in_network_04 = number_of_port_branch_in_network_04 + 1;
-        modified_edges_for_network_04 = [modified_edges_for_network_04; shared_nodes_of_A(i) shared_nodes_of_A(i+1)];
+        modified_edges_for_network_04 = [modified_edges_for_network_04; shared_nodes_of_D(i) shared_nodes_of_D(i+1)];
     end
 end

@@ -17,9 +17,14 @@ R13 7 8 1k
 
 
 R14 9 10 3k
-R15 9 0  3k
-R16 10 0 3k
-I17 0 7 DC 3m
+R15 9 11  3k
+R16 10 11 3k
+I17 11 13 DC 3m
+
+R18 7 12  4k
+R19 12 13 4k
+R20 12 0  4k
+R21 13 0  4k
 
 .op
 .control 
@@ -42,9 +47,13 @@ print (v(7) - v(8))
 
 
 print (v(9) - v(10))
-print (v(9))
-print (v(10))
-print (-v(7))
+print (v(9) - v(11))
+print (v(10)- v(11))
+print (v(11)- v(13))
+print (v(7) - v(12))
+print (v(12) - v(13))
+print (v(12))
+print (v(13))
 
 .endc
 .end

@@ -6,7 +6,7 @@ function [G_n4, J_n4]=  multiport_decomp_G_and_J_of_network_04(cktnetlist)
     partition_simple = multiport_decomp_partition_simple(cktnetlist);
     size_of_G = 0 ;
     for i = (partition_simple)
-        if (i == 0) 
+        if (i == 3) 
             size_of_G = size_of_G + 1;
         end
     end
